@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="name-email">
+            <p class="name">Queen Cobham</p>
+            <p class="email" data-testid="slackEmail">queencobham@gmail.com</p>
+        </div>
+        <div class="main">
+            <div class="profile-text">
+                <div class="about">
+                    <h1>Crea<span data-testid="slackDisplayName">qc</span>tive frontend developer*</h1>
+                </div>
+            </div>
+            <div class="profile-img">
+                <img src="./me.jpg" alt="" data-testid="slackProfilePicture">
+            </div>
+        </div>
+        <div class="tech-goals">
+            <h2 class="goals-header">my tech goals*</h2>
+           <p class="goals-text">My goals for the next two years is to be proficient in both frontend and backend development, perfect my craft in technical writing, mentor a tech newbie and also secure a full-time role as a web developer also adding value to anyone or company I get to work with.</p>
+        </div>
+
+        <div class="footer">
+            <p>Hey, check out some of my favourite websites, totally worth your time!!!</p>
+            <ul>
+                <li><a href="https://hng.tech/learn" class="hng" data-testid="hngLink">HNG Learn</a></li>
+                <li><a href="https://keyword.dog" class="keyword" data-testid="keywordLink">Search Ranking</a></li>
+                <li><a href="https://scrapeanyweb.site" class="scrape" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+            </ul>
+        </div>
+        <div class="dateandtime">
+            <h3>Don't have your watch with you?? look no further, i got you!!</h3>
+            <p>It's currently: <span id="currentTimeUTC" data-testid="currentTimeUTC"></span></p>
+            <p>Today is: <span id="currentDay" data-testid="currentDay"></span></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html> 

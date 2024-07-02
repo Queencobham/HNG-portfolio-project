@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fafaf8;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.name-email{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.name-email p{
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 80px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.name{
+    text-transform: uppercase;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-text .about h1{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#363636;
+    font-size: 100px;
+    max-width: 900px;
+    line-height: 106px;
+    text-align: center;
+    margin-top: 0.8em;
+}
+
+.profile-text .about h1 span{
+    width: 100%;
+    position: relative;
+    top: -50px;
+    background-color: #dcdcdc;
+    color: #ffffff;
+    padding: 13px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.tech-goals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    background: url('./bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tech-goals h2{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 60px;
+    font-weight: 500;
+    color:#363636;
+    line-height: 106px;
+}
+
+.tech-goals p{
+    max-width: 900px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    line-height: 30px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 8em;
+  padding: 44px 40px 50px;
+  border-top: 4px double rgba(54, 54, 54, 0.1);
+}
+
+.footer p{
+    color: #363636;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.footer ul li{
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #175aff;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer a:hover{
+    background-color: transparent;
+    border: 3px solid #175aff;
+    color: #175aff;
+}
+
+.dateandtime{
+    margin-bottom: 20px;
+}
+
+.dateandtime h3{
+    color: #363636;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 33px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.dateandtime p{
+    color: #124fe9;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+@media only screen and (max-width: 768px){
+    .name-email{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        gap: 3em;   
+        margin-top: 10px;
+    }
+    
+    .name-email p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile-text .about h1{
+        width: fit-content;
+        font-size: 2.6rem;
+        line-height: 50px;
+        margin-top: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .profile-text .about h1 span{
+        top: -27px;
+    }
+
+    .profile-img img{
+        max-width: 100%;
+    }
+    
+    .tech-goals{
+        margin-top: 50px;
+    }
+    
+    .tech-goals h2{
+        line-height:60px;
+    }
+
+    .tech-goals p{
+        max-width: 95%;
+        line-height: 28px;
+        margin-top: 10px;
+    } 
+    
+    .footer{
+      margin-top: 3em;
+    }
+    
+    .footer p{
+        line-height: 28px;
+        margin-top: -30px;
+    }
+    
+}
